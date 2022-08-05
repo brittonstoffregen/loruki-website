@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* General */
+:root {
+  --primary-color: #047aed;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Nav Bar */
+.header-section {
+  background: var(--primary-color);
+}
+
+.header-section a {
+  color: #fff
+}
+
+.header-container {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  color: #fff;
+  height: 70px;
+  padding: 0 40px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+nav li:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Showcase */
+.showcase {
+  background-color: var(--primary-color);
+}
+
+.showcase-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  padding: 0 40px;
+  height: 100%;
+}
+
+.showcase-text {
+  color: #fff;
+}
+
+.showcase-text a {
+  color: #fff;
+}
+
+.showcase-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  height: 350px;
+  width: 400px;
+  position: relative;
+  top: 60px;
+  justify-self: flex-end;
+  z-index: 100;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2 );
+}
+
+.showcase-form h1 {
+  margin: 10px 0;
+}
+
+.form-control {
+  margin: 30px 0;
+  padding: 3px;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  padding: 3px;
+  outline: none;
+  font-size: 16px;
+}
+
+.showcase-form input[type="submit"] {
+  padding: 10px 30px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.showcase-text h1{
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.showcase-text p{
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.showcase-text a{
+  background-color: transparent;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;    
+  color: #fff;
+  border-radius: 5px;
+  height: 47px;
+}
+
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  background-color: #fff;
+}
