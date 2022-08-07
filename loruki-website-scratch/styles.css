@@ -3,6 +3,7 @@
 /* General */
 :root {
   --primary-color: #047aed;
+  --dark-color: #002240;
 }
 
 * {
@@ -217,4 +218,89 @@ nav li:hover {
 
 .cli > :nth-child() {
 
+}
+
+/* Cloud */
+.cloud {
+  background-color: var(--primary-color);
+}
+
+.cloud-container {
+  display: grid;
+}
+
+.cloud-info {
+  color: #fff;
+}
+
+.cloud-info h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.cloud-info p {
+  font-size: 20px;
+
+}
+
+.cloud-info a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  background-color: var(--dark-color);
+}
+
+/* Languages */
+.languages {
+  text-align: center;
+}
+
+.languages h2 {
+  font-size: 32px;
+  margin: 24px 0;
+}
+
+.languages-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 200px;
+}
+
+.language-card {
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+  padding: 20px;
+  font-size: 20px;
+  margin: 18px 10px 40px;
+  border-radius: 10px;
+  transition: transform 0.1s ease-in
+}
+
+.language-card:hover {
+  transform: translateY(-15px)
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.footer-container {
+  display: grid;
+}
+
+.footer a {
+  color: #fff;
+  border-bottom: none;
+}
+
+.footer nav li {
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul {
+  display: block;
 }
